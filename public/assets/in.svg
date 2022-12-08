@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="500"
+   height="500"
+   viewBox="0 0 500 500"
+   version="1.1"
+   id="svg421"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="in.svg"
+   inkscape:export-filename="in.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview423"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showgrid="true"
+     showborder="true"
+     inkscape:zoom="0.23384891"
+     inkscape:cx="-611.50596"
+     inkscape:cy="547.36198"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid441"
+       spacingx="10"
+       originx="0"
+       originy="500"
+       spacingy="10" />
+  </sodipodi:namedview>
+  <defs
+     id="defs418">
+    <rect
+       x="150"
+       y="100"
+       width="200"
+       height="250"
+       id="rect1388" />
+    <rect
+       x="150"
+       y="100"
+       width="330.02666"
+       height="105.05039"
+       id="rect1388-9" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#00b2ed;fill-opacity:1"
+       id="rect495"
+       width="500"
+       height="500"
+       x="0"
+       y="0"
+       ry="50"
+       inkscape:export-filename=".\logo-in.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       id="text1386"
+       style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:72.5302px;font-family:Gilroy;-inkscape-font-specification:'Gilroy, Ultra-Bold';font-variant-ligatures:no-common-ligatures discretionary-ligatures;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect1388);fill:#ffffff;fill-opacity:1"
+       transform="matrix(6.3914898,0,0,6.3914898,-1346.0181,-662.32776)"><tspan
+         x="219.42851"
+         y="167.09043"
+         id="tspan994">in</tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1386-9"
+       style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:72.5302px;font-family:Gilroy;-inkscape-font-specification:'Gilroy, Ultra-Bold';font-variant-ligatures:no-common-ligatures discretionary-ligatures;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect1388-9);fill:#ffffff;fill-opacity:1"
+       transform="matrix(6.3914898,0,0,6.3914898,-2930.0855,-662.32776)"><tspan
+         x="178.62051"
+         y="167.09043"
+         id="tspan996">connect</tspan></text>
+  </g>
+</svg>
