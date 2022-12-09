@@ -11,5 +11,10 @@
 }
 
 body{
-  background-color: var(--color);
+  background-color: var(--secundario);
+  backdrop-filter: contrast(2);
+}
+main{
+  display: flex;
+  padding: .5rem;
 }

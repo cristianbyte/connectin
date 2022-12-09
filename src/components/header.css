@@ -1,7 +1,8 @@
 .header{
     position: sticky;
     top: 0;
-    box-shadow: 0 .1rem .3rem var(--secundario);
+    box-shadow: 0 .1rem .3rem var(--color);
+    background-color: var(--color);
     font-family: gil;
     font-weight: 900;
     display: flex;
@@ -64,6 +65,11 @@
 .header__right{
     display: flex;
     align-items: center;
+    overflow-x: scroll;
+}
+
+.header__right::-webkit-scrollbar {
+    display: none;
 }
 
 .header__option{
