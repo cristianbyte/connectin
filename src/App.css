@@ -11,10 +11,10 @@
 }
 
 body{
-  background-color: var(--secundario);
-  backdrop-filter: contrast(2);
+  background-color: #0b0b36;
 }
 main{
   display: flex;
   padding: .5rem;
+  gap: .5rem;
 }

@@ -3,7 +3,7 @@
     top: 12vh;
     display: flex;
     flex-direction: column;
-    flex: 0.2;
+    flex: 0.25;
     gap: .5rem;
     color: var(--leter-color);
     font-family: gil;

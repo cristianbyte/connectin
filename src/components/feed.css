@@ -1,0 +1,43 @@
+.feed{
+    flex: 0.5;
+}
+
+.feed__postContainer{
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: var(--color);
+}
+
+.feed__postInput{
+    display: flex;
+    border-radius: .5rem;
+    border: 1px solid var(--secundario);
+    padding: .5rem;
+}
+
+.feed__postInput form{
+    display: flex;
+    width: 100%;
+}
+
+.feed__postInput form input{
+    border: none;
+    margin-left: .5rem;
+    flex: 1;
+    outline-width: 0;
+    background-color: transparent;
+    caret-color: var(--leter-color);
+    color: var(--leter-color);
+    font-size: 1.2rem;
+}
+
+.feed__postInput button{
+    display: none;
+}
+
+.feed__options{
+    display: flex;
+    gap: 1rem;
+    margin-top: .5rem;
+    justify-content: flex-start;
+}
