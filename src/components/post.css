@@ -1,0 +1,34 @@
+.post{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--color);
+    border-radius: .5rem;
+    padding: .5rem;
+    gap: .5rem;
+    color: var(--leter-color);
+    font-family: gil;
+}
+
+.post__header{
+    display: flex;
+}
+
+.post__info p{
+    color: gray;
+    line-height: 1.3rem;
+    font-size: .8rem;
+}
+
+.post__image{
+    width: 6vh;
+    height: auto;
+    margin-right: .5rem;
+}
+
+.post__body{
+    overflow-wrap: anywhere;
+}
+.post__buttons{
+    display: flex;
+    gap: .5rem;
+}

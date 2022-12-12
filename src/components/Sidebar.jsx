@@ -14,7 +14,7 @@ export default function Sidebar(){
         <div className="sidebar">
             <div className="sidebar__up">
                 <img className="sidebar__up--img" src="https://source.unsplash.com/400x150" alt="" />
-                <HeaderOption clase='sidebar__up--avartar s__up--margin' avatar={'https://i.pravatar.cc/300'}/>
+                <HeaderOption clase='sidebar__up--avartar' avatar={'https://i.pravatar.cc/300'}/>
                 <h2>Matsia Kurma</h2>
                 <h4 >Lorem CEO of ipsum dolor React</h4>
                 <div className="sidebar__stats">

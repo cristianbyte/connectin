@@ -64,6 +64,7 @@
 
 .header__right{
     display: flex;
+    gap: 1.5rem;
     align-items: center;
     overflow-x: scroll;
 }
@@ -79,7 +80,6 @@
     cursor: pointer;
     color: var(--secundario);
     filter: brightness(2);
-    padding:0 1rem;
 }
 
 .header__option:hover{
