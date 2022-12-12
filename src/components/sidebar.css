@@ -1,9 +1,11 @@
 .sidebar{
     position: sticky;
-    top: 12vh;
+    top: 10vh;
+    left: 0;
     display: flex;
     flex-direction: column;
     flex: 0.25;
+    height: fit-content;
     gap: .5rem;
     color: var(--leter-color);
     font-family: gil;

@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './components/Header';
-import Sidebar from './components/Sidebar';
-import Feed from './components/Feed';
+import Header from './Components/Header';
+import Sidebar from './Components/Sidebar';
+import Feed from './Components/Feed';
 
 function App() {
   return (

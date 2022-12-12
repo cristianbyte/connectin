@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-evenly;
     padding: .5rem;
+    z-index: 100;
 }
 
 .header__left{
