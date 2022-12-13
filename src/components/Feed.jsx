@@ -11,8 +11,11 @@ import {db} from '../firebase'
 import firebase from 'firebase/compat/app';
 
 export default function Feed(){
+      // State para mantener el valor del formulario de entrada
     const [input, setInput] = useState('')
+    // State para mantener la lista de publicaciones
     const [posts, setPosts] = useState([])
+     // Recupera la lista de publicaciones de la base de datos cuando el componente carga
     useEffect(()=>{
         db.collection('posts').orderBy('timestamp', 'desc').onSnapshot(snapshot =>{
             setPosts(snapshot.docs.map(
@@ -20,6 +23,8 @@ export default function Feed(){
             ));
         })
     },[])
+
+    // Agrega una nueva publicación a la base de datos y limpia el campo de entrada
     const sendPost = (e) =>{
         e.preventDefault()
         db.collection('posts').add({
@@ -49,6 +54,9 @@ export default function Feed(){
                     <InputOption Icon={LiveTvIcon} title='Stream' color='#EF4B4B'/>
                 </div>
             </div>
+            {/* Se ejecuta en un componente de React y se encarga de mostrar una lista de publicaciones en pantalla. 
+            La lista de publicaciones se obtiene del estado del componente, y se itera utilizando 
+            el método map para crear un componente Post por cada publicación en la lista.*/}
             {posts.map(({id, data:{name, description, message, photoURL}})=>(
                 <Post key={id} name={name} description={description} message={message} photoURL={photoURL} />
             ))} 

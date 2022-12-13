@@ -1,8 +1,10 @@
 :root{
-  --color: #000020;
-  --primario:#00b2ed;
-  --secundario: #4e4e6a;
-  --leter-color: white;
+  --color: #ffffff;
+  --primario:#00b2ed; /* cyan process */
+  --primario2: #ADEBFF50; /* non photo blue*/
+  --secundario: #37606D; /* jet */
+  --leter-color: #000020; /* xiketic */
+  --spring-green: #37FF8B;
 }
 
 @font-face {
@@ -11,7 +13,9 @@
 }
 
 body{
-  background-color: #0b0b36;
+  background-color: var(--color);
+  overflow-x: hidden;
+  width: 100vw;
 }
 main{
   display: flex;

@@ -1,7 +1,6 @@
 .header{
     position: sticky;
     top: 0;
-    box-shadow: 0 .1rem .3rem var(--color);
     background-color: var(--color);
     font-family: gil;
     font-weight: 900;
@@ -17,9 +16,12 @@
 }
 
 .header__mark{
-    color: white;
+    color: var(--color);
     font-size: 1.5rem;
-    padding: .2rem;
+    font-weight: lighter;
+    -webkit-text-stroke: 1px var(--leter-color);
+    letter-spacing: 2px;
+    padding: .1rem;
 }
 
 @media (orientation: portrait) {
@@ -29,7 +31,7 @@
 }
 
 .icon{
-    color: var(--leter-color);
+    color: var(--color);
     cursor: pointer;
     width: 1.7rem;
 }
@@ -39,7 +41,6 @@
     cursor: pointer;
     object-fit: contain;
     height: 5vh;
-    background-color: var(--secundario);
 }
 
 .header__search{
@@ -47,20 +48,24 @@
     padding: 0 .5rem;
     display: flex;
     align-items: center;
-    background-color: var(--secundario);
+    background-color: var(--primario2);
     border-radius: .3rem;
 }
 
 .header__search input{
     height: 3vh;
     width: 20vw;
-    background-color: transparent;
     outline: none;
+    background-color: transparent;
     color: white;
     font-size: 1.2rem;
-    caret-color: var(--leter-color);
+    caret-color: var(--color);
     border: none;
     padding: .3rem; 
+}
+
+input::placeholder{
+    color: var(--color);
 }
 
 .header__right{
@@ -80,7 +85,6 @@
     align-items: center;
     cursor: pointer;
     color: var(--secundario);
-    filter: brightness(2);
 }
 
 .header__option:hover{
