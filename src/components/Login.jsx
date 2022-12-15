@@ -14,7 +14,12 @@ export default function Login(){
                 </div>
             </div>
             <div className="login__rigth">
-
+                <h2>Hey, Hello </h2>
+                <form>
+                    <input type="email" name="email" placeholder="Name" />
+                    <input type="password" name="password" placeholder="Password" />
+                    <button>Log In</button>
+                </form>
             </div>
         </div>
     )
