@@ -23,7 +23,7 @@ export default function Header() {
             
             <div className='header__right'> 
                 <HeaderOption Icon={HomeIcon} title='Home'/>
-                <HeaderOption Icon={GroupIcon} title='My Network'/>
+                <HeaderOption Icon={GroupIcon} title='Network'/>
                 <HeaderOption Icon={WorkIcon} title='Jobs'/>
                 <HeaderOption Icon={ChatIcon} title='Messaging'/>
                 <HeaderOption Icon={NotificationsIcon} title='Notifications'/>
