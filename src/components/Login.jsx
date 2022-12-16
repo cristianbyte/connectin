@@ -12,25 +12,41 @@ export default function Login(){
     const dispatch = useDispatch();
 
     const loginApp = (e)=>{
-        fill === 'login' ? e.preventDefault():
-            e.preventDefault()
-            console.log('who')
-            auth.createUserWithEmailAndPassword(email,password)
-            .then((userAuth)=>{
-                userAuth.user.updateProfile({
-                    displayName:name,
-                }).then(()=>{
-                    dispatch(login({
-                        email: userAuth.user.email,
-                        uid: userAuth.user.uid,
-                        displayName: name,
-                    }))
+        e.preventDefault()
+            auth.signInWithEmailAndPassword(email,password)
+            .then(userAuth => {
+                dispatch(login({
+                    email: userAuth.user.email,
+                    uid: userAuth.user.uid,
+                    displayName: name,
                 })
-            }).catch((error) =>{
-                alert(error)
-            })
-        
-    }
+                )
+            }).catch((error) => alert(error))
+        }
+        const register = () => {
+            if (!name) {
+                return alert("Please Enter Full Name");
+            }
+            auth.createUserWithEmailAndPassword(email, password)
+                .then((userAuth) => {
+                    userAuth.user.updateProfile({
+                        displayName: name
+                    })
+                        .then(() => {
+                            dispatch({
+                                type: "LOGIN",
+                                payload: {
+                                    email: userAuth.user.email,
+                                    uid: userAuth.user.uid,
+                                    displayName: name
+                                }
+                            })
+                        })
+                })
+                .catch((error) => {
+                    alert(error.message);
+                })
+        };
 
     return(
         <div className="login">
@@ -49,9 +65,10 @@ export default function Login(){
                     }
                     <input value={email} onChange={(e)=>setEmail(e.target.value)} type="email" required placeholder="Email" />
                     <input value={password} onChange={(e) =>setPassword(e.target.value)} type="password" required placeholder="Password" />
-                    <button type="submit" onClick={loginApp}>{
-                        fill === 'login'?'Log In':'Register'
-                    }</button>
+                    {
+                        fill === 'login'? <button onClick={loginApp}>Log In</button>:
+                        <button onClick={register}>Register</button>
+                    }
                     <p>{fill==='login'?'Not a member? ':'Already have an account? '}
                         <span onClick={(e)=> setFill(fill==='login'?'register':'login')} >
                             {fill==='login'?'Register Now':'Login Now'}

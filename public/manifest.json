@@ -16,5 +16,6 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "black",
-  "background_color": "#000020"
+  "background_color": "#000020",
+  "content_security_policy": "script-src 'self' https://fonts.gstatic.com https://apis.google.com https://www.googleapis.com https://securetoken.googleapis.com https://accounts.google.com https://my-project.firebaseapp.com; object-src 'self'"
 }

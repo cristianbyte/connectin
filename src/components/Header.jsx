@@ -8,8 +8,18 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import WorkIcon from '@mui/icons-material/Work';
 import ChatIcon from '@mui/icons-material/Chat';
 import logo from '../assets/in.png'
+import { useDispatch } from 'react-redux';
+import { auth } from '../firebase';
+import { logout } from '../features/userSlice';
 
 export default function Header() {
+
+    const dispatch = useDispatch()
+    const logoutApp = () =>{
+        dispatch(logout())
+        auth.signOut()
+    }
+
     return (
         <div className='header'>
             <div className='header__left'> 
@@ -27,7 +37,7 @@ export default function Header() {
                 <HeaderOption Icon={WorkIcon} title='Jobs'/>
                 <HeaderOption Icon={ChatIcon} title='Messaging'/>
                 <HeaderOption Icon={NotificationsIcon} title='Notifications'/>
-                <HeaderOption avatar={'https://i.pravatar.cc/300'}/>
+                <HeaderOption onClick={logoutApp}  avatar={'https://i.pravatar.cc/300'}/>
            </div>
         </div>
     );
