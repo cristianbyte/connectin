@@ -13,7 +13,6 @@ import { auth } from '../firebase';
 import { logout } from '../features/userSlice';
 
 export default function Header() {
-
     const dispatch = useDispatch()
     const logoutApp = () =>{
         dispatch(logout())
